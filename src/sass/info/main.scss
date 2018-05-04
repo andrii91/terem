@@ -1,0 +1,725 @@
+@import 'variables';
+
+*{
+  outline: none;
+}
+a:focus, a:hover, input:focus, input:hover {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  @import 'MediaQueries/main';
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 99;
+  transition: 0.2s;
+  &.fixed {
+    background: #fff;
+    padding: 10px 0;
+  }
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  li {
+    display: inline-block;
+    margin: 0 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      color: #333333;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 700;
+      &.call {
+        color: #333333;
+        font-family: "Reforma Grotesk Demi C";
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.91px;
+        border: 2px solid #7a7a7a;
+        padding: 8px 17px;
+        transition: 0.2s;
+        &:hover  {
+          background-color: #c83a3a;
+          border-color: #c83a3a;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.nav-logo {
+  img {
+      width: 74px;
+    height: 44px;
+  }
+}
+
+.header {
+  overflow: hidden;
+  padding-top: 179px;
+  background: url('../images/bl1-bg.png') no-repeat center top;
+  .order-btn {
+    margin-top: 17px;
+  }
+}
+
+.header-item {
+  h1 {
+    color: #000000;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 75.67px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  p {
+    color: #7a7a7a;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    b {
+      color: #000000;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}
+
+.order-btn {
+color: #ffffff;
+font-family: "Reforma Grotesk Demi C";
+font-size: 24px;
+font-weight: 400;
+text-transform: uppercase;
+/* Text style for "П, ОСЕТИТЬ" */
+letter-spacing: 1.21px;
+  padding: 10px 33px;
+  display: inline-block;
+  background-color: #c83a3a;
+  transition: 0.2s;
+  &:hover {
+    background-color: #272520;
+    color: #ffffff;
+    
+  }
+}
+
+.header-carousel {
+  width: 68vw;
+  min-width: 260px;
+  position: relative;
+  .owl-item  {
+    padding-bottom: 36px;
+    padding-left: 15px;
+    &.active {
+      .item {
+        box-shadow: 0 12px 25px rgba(29, 26, 28, 0.25);
+      }
+      
+    }
+  }
+  .owl-next {
+    outline: none;
+    svg {
+      fill: #7a7a7a;
+      transition: 0.2s;
+      width: 23px;
+      &:hover {
+        fill: #c83a3a;
+      }
+    }
+  }
+  .owl-prev {
+    outline: none;
+    margin-right: 20px;
+    
+    svg {
+      fill: #7a7a7a;
+      width: 23px;
+      transition: 0.2s;
+      &:hover {
+        fill: #c83a3a;
+      }
+    }
+  }
+  .owl-nav {
+    text-align: right;
+    max-width: 34vw
+  }
+  .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    .owl-dot  {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border: 2px solid #7a7a7a;
+      margin: 0 9.5px;
+      border-radius: 50%;
+      &.active {
+        background-color: #c83a3a;
+        border-color: #c83a3a;
+      }
+    }
+  }
+}
+
+.item_bottom-slider {
+  margin-top: 112px;
+  .col {
+    padding: 0;
+  }
+}
+
+.header-item_bottom {
+  .title {
+    color: #333333;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #333333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.first {
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.first-item {
+  margin-bottom: 70px;
+  h2 {
+    color: #000000;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+    span {
+      display: block;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+    }
+  }
+  p {
+    color: #333333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+  .mark {
+    color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+    background-color: #c83a3a;
+  line-height: 30px;
+    padding: 0 7px;
+    
+  }
+}
+
+.exhortation {
+  padding: 100px 0;
+}
+
+.exhortation-item {
+  .title {
+    color: #000000;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  p {
+    color: #333333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    b {
+      color: #000000;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 25px;
+      display: block;
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      color: #333333;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      padding-left: 15px;
+      position: relative;
+      margin-bottom: 10px;
+      &:before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background-color: #c83a3a;
+        border-radius: 50%;
+        position: absolute;
+        top: 7px;
+        left: 0;
+      }
+    }
+  }
+}
+
+.exhortation-block {
+  background: url('../images/bl2-img2.png') no-repeat;
+  max-width: 750px;
+  min-height: 439px;
+  padding: 77px 41px;
+  .box {
+    margin-left: auto;
+    max-width: 250px;
+    text-align: center;
+    .title {
+      color: #000000;
+      font-family: "Reforma Grotesk Demi C";
+      font-size: 28px;
+      font-weight: 400;
+      line-height:1;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    p {
+      color: #000000;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.slider-item {
+  position: relative;
+  margin-bottom: 30px;
+  
+  .paranja {
+    background-image: linear-gradient(7deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  h4 {
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+    color: #ffffff;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.28px;
+    z-index: 6;
+  }
+  &:hover {
+    box-shadow: 0 11px 24px rgba(29, 26, 28, 0.47);
+    .caption {
+      opacity: 1;
+    -moz-transition: all 0.5s linear 0s;
+    -webkit-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
+    }
+  .caption-block {
+        -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    }
+  }
+  .caption-block {
+        opacity: 0;
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -moz-transition: all 0.2s linear 0.1s;
+    -webkit-transition: all 0.2s linear 0.1s;
+    transition: all 0.2s linear 0.1s;
+  }
+  .caption {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 23px 25px 16px;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    opacity: 0;
+
+    .top {
+      text-align: left;
+      color: #ffffff;
+      font-family: "Reforma Grotesk Demi C";
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.91px;
+      &.right {
+        text-align: right;
+      }
+    }
+    .caption-item {
+      margin-top: 14%;
+      &.large {
+        margin-top: 28%;
+      }
+      p {
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .order-btn {
+        padding: 8px 33px;
+        line-height: 1;
+        svg {
+          width: 23px;
+          fill: #fff;
+        }
+      }
+    }
+    
+  }
+}
+
+.home {
+  padding:  0 0 90px;
+  .title {
+    color: #000000;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+}
+
+.caption_row {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.align-top {
+  position: absolute;
+  top: 23px;
+  left: 25px;
+}
+
+.carousel-nav {
+  text-align: center;
+  div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+    svg {
+     width: 23px;
+ fill: #7a7a7a; 
+      cursor: pointer;
+    }
+  .home-count {
+    color: #7a7a7a;
+      font-family: "Reforma Grotesk Demi C";
+      font-size: 28px;
+      font-weight: 400;
+      text-transform: uppercase;
+    margin: 0 44px;
+    .active {
+      color: #7a7a7a;
+      font-family: "Reforma Grotesk Demi C";
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    .no-active {
+      font-size: 18px;
+    }
+  }
+  
+}
+
+#map {
+  iframe {
+    max-width: 1142px;
+    width: 100%;
+    min-height: 583px;
+  }
+}
+
+.excursion {
+  margin-bottom: -416px;
+  position: relative;
+  text-align: center;
+  padding-top: 90px;
+  z-index: 3;
+  .title {
+    color: #000000;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+}
+
+.excursion-tab {
+  margin-bottom: 50px;
+  .link {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+    li {
+      width: 50%;
+      float: left;
+      color: #000000;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1;
+      padding: 9px;
+      cursor: pointer;
+      &.active {
+        color: #c83a3a;
+        border-bottom: 9px solid #c83a3a;
+      }
+    }
+  }
+  .content {
+    .item {
+      display: none;
+      img {
+        max-width: 100%;
+      }
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+
+.map-item {
+  margin-top: 35px;
+  .title {
+    color: #ffffff;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+  p {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.steps {
+  background-image: url('../images/bl5-bg.png');
+  background-color: #272520;
+  background-position: center bottom;
+  padding-top: 639px;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 180px;
+  background-repeat: no-repeat;
+}
+
+#home_info {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0;
+  background: #fff;
+  img {
+    width: 100%;
+  }
+  .row {
+    margin: 0;
+    .col-lg-7, .col-md-5, .col-6 {
+      padding: 0;
+    }
+    .col-lg-7 {
+      background: #333333;
+    }
+    .col-lg-5 {
+      padding: 42px 67px;
+      background: rgba(0,0,0,0.1);
+        &.white {
+          background: #fff;
+          }
+    }
+  }
+  .owl-dots {
+    text-align: center;
+    .owl-dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #7a7a7a;
+      border-radius: 50%;
+      margin: 0 8.5px;
+      vertical-align: middle;
+      &.active {
+        background-color: #c83a3a;
+        border-color: #c83a3a;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+
+.home_info-item {
+  padding: 40px 42px 38px;
+  .top {
+    color: #ffffff;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.21px;
+  }
+  .box {
+    margin: 70px 0;
+    h4 {
+      color: #ffffff;
+      font-family: "Reforma Grotesk Demi C";
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    p {
+      color: #ffffff;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+  .bottom {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    b {
+      color: #c83a3a;
+      font-family: Roboto;
+      font-weight: 700;
+      display: block;
+    }
+    br {
+      display: none;
+    }
+  }
+}
+.text-right {
+  text-align: right;
+}
+
+form {
+  text-align: center;
+  input {
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    padding: 10px 0;
+    opacity: 0.7;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.4px;
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    &:focus {
+      opacity: 1;
+      border-color: #c83a3a;
+    }
+  }
+  button {
+    border: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.form-title {
+  color: #000000;
+  font-family: "Reforma Grotesk Demi C";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.modal {
+  display: none;
+}
