@@ -2,4 +2,12 @@
 
 @media #{$tabletLandscape} {
     @import '../desktop';
+  .header-item {
+        text-align: left;
+        margin-bottom: 0px;
+      }
+  .first img {
+    max-width: 100%;
+    width: 100%;
+  }
 }

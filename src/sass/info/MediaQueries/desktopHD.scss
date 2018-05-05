@@ -3,6 +3,13 @@
 @media #{$desktopHD} {
     @import '../desktop';
     & {
-
+      .reviews-carousel {
+        width: 90vw;
+      }
+      .discount {
+    background: url(../images/sc4.png) no-repeat 0% center;
+    min-height: 716px;
+    /* background-size: cover; */
+}
     }
 }

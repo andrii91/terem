@@ -35,6 +35,10 @@ nav {
   li {
     display: inline-block;
     margin: 0 15px;
+    color: #333333;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
     &:last-child {
       margin-right: 0;
     }
@@ -231,6 +235,7 @@ letter-spacing: 1.21px;
       font-size: 16px;
       font-weight: 700;
       line-height: 24px;
+      text-transform: lowercase;
     }
   }
   p {
@@ -587,6 +592,27 @@ letter-spacing: 1.21px;
   z-index: 2;
   padding-bottom: 180px;
   background-repeat: no-repeat;
+  .title {
+    color: #ffffff;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 80px;
+    span {
+      color: #ffffff;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 700;
+      display: block;
+    }
+  }
+  .order-btn {
+    max-width: 362px;
+    width: 100%;
+    margin-top: 77px;
+  }
 }
 
 #home_info {
@@ -721,5 +747,439 @@ form {
 }
 
 .modal {
+  display: none;
+}
+
+.padding-margin0 {
+  padding: 0;
+  margin: 0;
+  .row {
+    margin: 0;
+  }
+  .col {
+    padding: 0;
+  }
+  .col-lg-4 {
+    padding: 0;
+  }
+    .col-2 {
+      padding: 0;
+    }
+    .col-10 {
+    padding-left: 18px;
+      padding-right: 22px;
+      
+    }
+}
+
+.steps-item {
+  margin-top: 100px;
+  color: #fff;
+  position: relative;
+  padding-top: 38px;
+  border-top: 1px dashed rgba(255,255,255,0.5);
+  &:before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -5.5px;
+  }
+  svg {
+    width: 60px;
+    max-height: 50px;
+    display: block;
+    position: absolute;
+    top: -118px;
+    left: 0;
+  }
+  .number {
+    color: #c83a3a;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  .title_small {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  p {
+    color: #cbcbcb;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+}
+
+.ml233 {
+  margin-left: 217px;
+  &:after {
+    content: "";
+    width: 233px;
+    height: 0;
+    border-top: 1px dashed #ffffff;
+    opacity: 0.5;
+    position: absolute;
+    top: -1px;
+    left: -233px;
+  }
+}
+
+.max-width {
+      max-width: 340px;
+  svg {
+        top: -102px;
+  }
+  p {
+    max-width: 220px;
+    
+  }
+  border: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.consultation {
+  padding: 90px 0;
+  .title {
+    color: #000000;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
+}
+
+.consultation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    color: #333333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 17px;
+    position: relative;
+    margin-bottom: 30px;
+    &:before {
+      content: "";
+      width: 5px;
+      height: 8px;
+      border: 5px solid transparent;	
+      border-left: 5px solid #2d2a2e;
+      position: absolute;
+      top: 4px;
+      left: 0;
+
+    }
+    
+  }
+}
+
+.consultation-info {
+  color: #000000;
+font-family: Roboto;
+font-size: 18px;
+font-weight: 700;
+line-height: 24px;
+  margin-top: 20px;
+margin-bottom: 0;
+}
+
+.consultation-carousel {
+  position: relative;
+  .disabled {
+    display: none;
+  }
+  .item {
+    position: relative;
+  }
+  .owl-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    .owl-dot {
+      display: inline-block;
+      vertical-align: middle;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #7a7a7a;
+      border-radius: 50%;
+      margin: 0 8.5px;
+      &.active {
+        width: 15px;
+        height: 15px;
+        background-color: #c83a3a;
+        border: 0;
+      }
+    }
+  }
+}
+
+.consultation-item {
+  position: absolute;
+  top: 105px;
+  right: 67px;
+  max-width:  353px;
+  h4 {
+    color: #000000;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    span {
+      color: #000000;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: lowercase;
+      display: block;
+    }
+  }
+  p {
+    background-color: #ffffff;
+    position: relative;
+    padding: 34px 40px;
+    color: #333333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 35px 0 48px;
+    &:before {
+      content: "";
+      border: 23px solid transparent;	
+      border-top: 23px solid #fff; 
+      border-right: 23px solid #fff;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: 30px;
+      left: -34px;
+    }
+  }
+}
+
+.reviews {
+  overflow: hidden;
+  padding: 90px 0 175px;
+  .title {
+    color: #000000;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+  }
+}
+
+.reviews-carousel {
+  width: 105vw;
+}
+
+.reviews-count {
+  color: #7a7a7a;
+font-family: "Reforma Grotesk Demi C";
+font-size: 18px;
+font-weight: 400;
+text-transform: uppercase;
+  margin: 0 44px;
+  .active {
+    font-size: 28px;
+  }
+}
+
+.video {
+  position: relative;
+  .btn {
+    width: 80px;
+    height: 80px;
+    background-color: #efefef;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      transform: translateX(-50%) translateY(-45%);
+    }
+    &:before {
+      content: "";
+      border: 15px solid transparent;	
+      border-left: 20px solid #c83a3a;
+      position: absolute;
+      top: 50%;
+      left: 33px;
+      transform: translateY(-50%);
+
+    }
+  }
+}
+
+.reviews-item {
+  padding: 0 20px;
+  margin-top: 25px;
+  text-align: center;
+  p {
+    margin-bottom: 18px;
+    color: #333333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  h6 {
+    color: #000000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}
+
+.discount {
+  background: url(../images/sc4.png) no-repeat 38% center;
+  min-height: 716px;
+  background-size: cover;
+  .title {
+    color: #000000;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 160px;
+    line-height: 1;
+  }
+  .order-btn {
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
+.discount-item {
+  h4 {
+    color: #ffffff;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.28px;
+    margin-bottom: 25px;
+  }
+  p {
+    color: #cbcbcb;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 330px;
+    margin-bottom: 30px;
+  }
+}
+
+.pull-left {
+  float: left;
+}
+
+footer {
+  padding-bottom: 24px;
+  padding-top: 105px;
+  .menu {
+    li {
+      margin: 0 28.5px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  background-color: #272520;
+  padding: 16px 0;
+}
+
+.rezart-logo {
+  display: block;
+  text-align: right;
+  svg {
+     width: 56px;
+  margin: -18px;
+    fill:#fff;
+    display: inline-block;
+  }
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    color: #999999;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 15px;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover {
+      color: #fff;
+      
+    }
+  }
+}
+
+#registration, #call {
+  padding: 68px;
+}
+
+#call {
+  max-width: 400px;
+  width: 100%;
+}
+
+.mob-btn {
+  display: none;
+  float: right;
+  svg {
+    width: 17px;
+  }
+}
+
+.home-slider.owl-carousel.owl-theme {
+  .owl-nav, .owl-dots {
+    display: none;
+}
+  &.mobile {
+    display: none;
+  }
+}
+
+.mobile {
   display: none;
 }

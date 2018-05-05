@@ -1,3 +1,296 @@
 & {
-  
+  .mob-btn {
+    display: block;
+  }
+  .menu {
+    display: none;
+    &.bg {
+      background: #fff;
+    }
+    li {
+      display: block;
+      text-align: center;
+      margin: 10px 0;
+      a {
+        display: block;
+      }
+    }
+  }
+  header,
+  main,
+  footer {
+    overflow: hidden;
+  }
+  .nav-logo img {
+    width: 54px;
+    height: 32px;
+  }
+  .header {
+    padding-top: 79px;
+    text-align: center;
+  }
+  .header-item {
+    max-width: 252px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 48px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+  }
+  br {
+    display: none;
+  }
+  .header-carousel.owl-carousel.owl-loaded {
+    display: none;
+  }
+  .order-btn {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* Text style for "П, ОСЕТИТЬ" */
+    max-width: 290px;
+    letter-spacing: 0.91px;
+  }
+  #call,
+  #registration {
+    padding: 20px;
+  }
+  .item_bottom-slider {
+    margin-top: 68px;
+    .owl-dots {
+      text-align: center;
+      .owl-dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 2px solid #7a7a7a;
+        margin: 0 9.5px;
+        border-radius: 50%;
+        &.active {
+          background-color: #c83a3a;
+          border-color: #c83a3a;
+        }
+      }
+    }
+    .header-item_bottom p {
+      margin: 0;
+    }
+  }
+  .first img {
+    max-width: 125%;
+    width: 117%;
+    margin-bottom: 35px;
+  }
+  .first-item {
+    text-align: center;
+  }
+  .first-item h2,
+  .exhortation-item .title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    span {
+      max-width: 189px;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .first-item {
+    margin-bottom: 30px;
+  }
+  .exhortation {
+    padding: 30px 0;
+  }
+  .exhortation-block {
+    margin-top: 45px;
+    background: url(../images/bl2-img2.png) no-repeat right center;
+    max-width: 750px;
+    min-height: inherit;
+    padding: 30px 15px;
+    margin-bottom: 99px;
+  }
+  .exhortation-block .box .title {
+    font-size: 24px;
+  }
+  .home {
+    text-align: center;
+  }
+  .home .title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    span {
+      display: block;
+      font-size: 18px;
+      text-transform: lowercase;
+      margin-top: 10px;
+    }
+  }
+  .home-slider.owl-carousel.owl-theme {
+    display: none;
+    &.mobile {
+      display: block;
+    }
+  }
+  .slider-item {
+    margin-bottom: 8px;
+  }
+  .home {
+    padding-bottom: 50px;
+  }
+  .excursion {
+    padding-top: 50px;
+        margin-bottom: -180px;
+    .container {
+      padding: 0;
+    }
+    .title {
+      font-size: 30px;
+    }
+  }
+  .excursion-tab .link li {
+    width: 100%;
+    float: none;
+    &.active {
+      border-bottom: 2px dashed #c83a3a;
+    }
+  }
+  #map iframe {
+    min-height: 315px;
+    height: inherit;
+  }
+  .excursion-tab {
+    margin-bottom: 30px;
+  }
+  .steps {
+    padding-top: 240px;
+    padding-bottom: 100px;
+    .title {
+      font-size: 30px;
+      margin: 0 auto;
+      max-width: 165px;
+      span {
+        text-transform: lowercase;
+        width: 300px;
+        margin-left: -67.5px;
+      }
+    }
+  }
+  .padding-margin0 {
+    .col {
+          -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    }
+  }
+  .padding-margin0 .col-10 {
+    padding-right: 0;
+  }
+  .ml233 {
+    margin-left: 0;
+  }
+  .consultation {
+    padding: 45px 0;
+    .col-lg-8 {
+      padding: 0;
+    }
+    .title {
+      font-size: 30px;
+    }
+  }
+  .consultation-list li {
+    margin-bottom: 18px;
+  }
+  .consultation-info {
+    max-width: 219px;
+    margin-bottom: 45px;
+  }
+  .consultation-carousel  {
+    text-align: center;
+    .consultation-item h4 {
+      
+    }
+    &.owl-carousel .owl-item img {
+      display: none;
+    }
+    .item {
+      padding: 15px;
+      min-height: 521px;
+      background-color: #efefef;
+      .consultation-item p:before {
+        display: none;
+      }
+      .consultation-item {
+        position: static;
+        max-width: 100%;
+      }
+    }
+  }
+  .consultation-carousel .owl-dots {
+    position: static;
+    margin-top: 15px;
+  }
+  .reviews {
+    text-align: center;
+    .owl-dots, .owl-nav  {
+      display: none;
+    }
+    .reviews-carousel {
+      width: 100%;
+    }
+    .title {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+    .reviews-item {
+      padding: 0;
+    }
+    .carousel-nav {
+      display: none;
+      margin-top: 35px;
+    }
+  .mobile {
+    display: block;
+  }
+  }
+  .reviews {
+    padding-bottom: 90px;
+  }
+  .discount {
+      background: url(../images/sc4.png) no-repeat 0% center;
+    text-align: center;
+    .discount-item h4 {
+      font-size: 24px;
+    }
+  }
+  .discount .title {
+    font-size: 30px;
+    margin-bottom: 135px;
+    text-align: left;
+  }
+  .discount-item p {
+    margin-bottom: 10px;
+  }
+  footer {
+    padding-top: 0;
+    text-align: center;
+    .nav-logo img {
+      width: 74px;
+      height: 44px;
+    }
+    .menu {
+      display: block;
+      li {
+        margin: 0 0 16px;
+      }
+    }
+  }
+  .footer-bottom, .rezart-logo {
+    text-align: center;
+  }
+   #home_info {
+    max-width: 100%;
+  }
 }

@@ -1,8 +1,105 @@
 @import '../../mq';
 
 @media #{$tabletPortrait} {
-    @import '../mobile';
-  	& {
-     
-	}
+  //    @import '../mobile';
+  & {
+  main, header, footer {
+    overflow: hidden;
+  }
+    .header-carousel .owl-dots {
+      display: none;
+    }
+    .header-carousel {
+      width: 100%;
+    }
+    .header-item {
+      text-align: center;
+      margin-bottom: 80px;
+      p {
+        max-width: 330px;
+        margin: 0 auto 10px;
+      }
+      br {
+        display: none;
+      }
+    }
+    .header-carousel .owl-nav {
+      max-width: 100%;
+      text-align: center;
+    }
+    .header-item_bottom {
+      text-align: center;
+    }
+    .item_bottom-slider {
+      margin-top: 68px;
+      .owl-dots {
+        text-align: center;
+        .owl-dot {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border: 2px solid #7a7a7a;
+          margin: 0 9.5px;
+          border-radius: 50%;
+          &.active {
+            background-color: #c83a3a;
+            border-color: #c83a3a;
+          }
+        }
+      }
+      .header-item_bottom p {
+        margin: 0;
+      }
+    }
+
+  }
+  .first img {
+    max-width: 114%;
+    width: 120%;
+  }
+  .first {
+    text-align: center;
+    .first-item h2 {
+      margin-top: 40px;
+      margin-bottom: 25px;
+    }
+  }
+  .exhortation-item span {
+    display: inline-block;
+    max-width: 380px;
+    vertical-align: top;
+    &:first-child {
+      p {
+        max-width: 221px;
+      }
+    }
+    &:nth-child(2) {
+      float: right;
+    }
+  }
+  .exhortation-block {
+    margin-top: 45px;
+    background: url('../images/bl2-img2ds.png') no-repeat center;
+  }
+  .slider-item .caption .top {
+    font-size: 12px;
+  }
+  .slider-item .caption .caption-item p {
+    font-size: 14px;
+  }
+  .slider-item .caption .caption-item .order-btn {
+    padding: 8px 14px;
+    line-height: 1;
+    font-size: 17px;
+}
+  .slider-item h4 {
+    bottom: 0px;
+    font-size: 20px;
+}
+  #home_info {
+    max-width: 100%;
+  }
+  .home_info-slider {
+    overflow: hidden;
+  }
 }
