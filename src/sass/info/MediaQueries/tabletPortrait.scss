@@ -102,4 +102,58 @@
   .home_info-slider {
     overflow: hidden;
   }
+  .ml233 {
+    margin-left: 0;
+  }
+  .max-width {
+    margin-left: auto;
+    margin-right: auto;
+    &:after {
+      content: "";
+      width: 220px;
+      height: 0;
+      border-top: 1px dashed #ffffff;
+      opacity: 0.5;
+      position: absolute;
+      top: -2px;
+      right: 100%;
+    }
+  }
+  .steps {
+    padding-bottom: 140px;
+  }
+  .consultation {
+    br {
+      display: none;
+    }
+    .col-lg-4 {
+      max-width: 557px;
+      margin: 0 auto
+    }
+  }
+  .consultation-list li {
+    margin-bottom: 20px;
+  }
+  .consultation-info {
+    margin-bottom: 65px;
+  }
+  .consultation .title {
+    margin-bottom: 40px;
+  }
+  .reviews-carousel {
+    width: 150vw;
+  }
+  .discount {
+    background: url(../images/sc4.png) no-repeat 22.5% center;
+  }
+  footer {
+    text-align: center;
+    .menu {
+      text-align: center;
+      li {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  }
 }

@@ -10,4 +10,23 @@
     max-width: 100%;
     width: 100%;
   }
+  .max-width {
+    margin-left: 0;
+    margin-right: 0;
+    &:after {
+      content: "";
+      display: none;
+    }
+  }
+  footer {
+    text-align: left;
+    .menu {
+      text-align: right;
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0px 10px;
+      }
+    }
+  }
 }
