@@ -1184,3 +1184,56 @@ footer {
 .mobile {
   display: none;
 }
+
+.success {
+  nav {
+    position: absolute;
+    text-align: center;
+    &.fixed {
+      box-shadow: none;
+      padding: 20px 0px;
+      background: 0 0;
+    }
+  }
+  .header {
+    background: url('../images/df564ds.png') no-repeat center top;
+    min-height: calc(100vh - 60px);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    .header-item {
+        text-align: center;
+      
+      h1 {
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        margin-bottom: 35px;
+      }
+      .order-btn {
+        margin: 0;
+      }
+    }
+  }
+  .footer-bottom {
+    background: 0 0;
+    padding: 10px 0 25px;
+    text-align: center;
+    .footer-list {
+      li {
+        color: #999999;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+}
