@@ -36,12 +36,12 @@ home.owlCarousel({
 
   home.on('changed.owl.carousel', function (event) {
     var index = event.item.index;
-    if (index == 1) {
+    /*if (index == 1) {
       index = event.item.count + 1;
-    }
+    }*/
   
     $('.home-count .no-active').text('0' + event.item.count);
-    $('.home-count .active').text('0' + (index - 1));
+    $('.home-count .active').text('0' + (index +1));
   });
   $('.next-home').click(function () {
     home.trigger('next.owl.carousel');
