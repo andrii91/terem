@@ -183,7 +183,25 @@ reviews.owlCarousel({
   });
   
   
+  $("#price_input").ionRangeSlider({
+     type: "double",
+    grid: false,
+    min: 54000,
+    max: 10100000,
+    from: 1200000,
+    to: 8500000,
+    postfix: "руб"
+    });
   
+  $("#metr_input").ionRangeSlider({
+     type: "double",
+    grid: false,
+    min: 3,
+    max: 411,
+    from: 50,
+    to: 289,
+    postfix: "м<sup>2</sup>"
+    });
 });
 
 

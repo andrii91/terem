@@ -160,4 +160,16 @@
       }
     }
   }
+  .home_img {
+    display: none;
+  }
+  .filter-box {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .filter-box:hover #metr.filter-info {
+    right: 0;
+    left: inherit;
+    transform: none;
+  }
 }
