@@ -837,6 +837,17 @@ form {
 
 .max-width {
       max-width: 340px;
+  margin-left: 65px;
+  &:after {
+        content: "";
+    width: 65px;
+    height: 0;
+    border-top: 1px dashed #fff;
+    opacity: .5;
+    position: absolute;
+    top: 0px;
+    left: -65px;
+  }
   svg {
         top: -102px;
   }

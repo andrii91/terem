@@ -1,6 +1,7 @@
 & {
   .mob-btn {
     display: block;
+    margin-top: 8px;
   }
   .menu {
     display: none;
@@ -142,7 +143,7 @@
   }
   .excursion {
     padding-top: 50px;
-        margin-bottom: -180px;
+        margin-bottom: -220px;
     .container {
       padding: 0;
     }
@@ -165,7 +166,7 @@
     margin-bottom: 30px;
   }
   .steps {
-    padding-top: 240px;
+    padding-top: 285px;
     padding-bottom: 100px;
     .title {
       font-size: 30px;
@@ -268,7 +269,7 @@
   .discount .title {
     font-size: 30px;
     margin-bottom: 135px;
-    text-align: left;
+    text-align: center;
   }
   .discount-item p {
     margin-bottom: 10px;
@@ -292,5 +293,20 @@
   }
    #home_info {
     max-width: 100%;
+  }
+  .first-item {
+    br {
+      display: block;
+    }
+  }
+  .exhortation-block .box {
+    margin-right:   auto;
+  }
+  .map-item p {
+    max-width: calc(100% - 30px);
+    margin: 0 auto 10px;
+  }
+  .max-width {
+    margin-left: 0;
   }
 }
