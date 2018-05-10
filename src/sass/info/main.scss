@@ -885,19 +885,28 @@ form {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    padding-left: 17px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 44px;
     position: relative;
-    margin-bottom: 30px;
+    margin-right: 57px;
+//    max-width: 255px;
+    z-index: 1;
+    &:last-child {
+      margin-right: 0;
+    }
     &:before {
-      content: "";
-      width: 5px;
-      height: 8px;
-      border: 5px solid transparent;	
-      border-left: 5px solid #2d2a2e;
+      content: attr(data-count);
       position: absolute;
-      top: 4px;
+      top: 0px;
       left: 0;
-
+      color: #efefef;
+      font-family: "Reforma Grotesk Demi C";
+      font-size: 110px;
+      font-weight: 400;
+      line-height: 1;
+      text-transform: uppercase;
+      z-index: -1;
     }
     
   }
@@ -909,12 +918,15 @@ font-family: Roboto;
 font-size: 18px;
 font-weight: 700;
 line-height: 24px;
-  margin-top: 20px;
 margin-bottom: 0;
+  max-width: 190px;
+  margin-left: auto;
+  margin-right: 75px;
 }
 
 .consultation-carousel {
   position: relative;
+  margin-top: 74px;
   .disabled {
     display: none;
   }
@@ -923,8 +935,10 @@ margin-bottom: 0;
   }
   .owl-dots {
     position: absolute;
-    bottom: 30px;
-    left: 30px;
+    top: 90px;
+    right: -25px;
+    transform: rotate(90deg);
+    transform-origin: left bottom;
     .owl-dot {
       display: inline-block;
       vertical-align: middle;
@@ -945,9 +959,10 @@ margin-bottom: 0;
 
 .consultation-item {
   position: absolute;
-  top: 105px;
-  right: 67px;
-  max-width:  353px;
+  top: 113px;
+  left: 60px;
+  max-width:  480px;
+  text-align: center;
   h4 {
     color: #000000;
     font-family: "Reforma Grotesk Demi C";
@@ -965,25 +980,25 @@ margin-bottom: 0;
     }
   }
   p {
-    background-color: #ffffff;
-    position: relative;
-    padding: 34px 40px;
     color: #333333;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    margin: 35px 0 48px;
-    &:before {
-      content: "";
-      border: 23px solid transparent;	
-      border-top: 23px solid #fff; 
-      border-right: 23px solid #fff;
-      width: 40px;
-      height: 32px;
-      position: absolute;
-      top: 30px;
-      left: -34px;
+   background: url('../images/quote_icon.svg') no-repeat center;
+    background-size: 173px;
+    min-height: 170px;
+    margin-top: 35px;
+    padding-top: 12px;
+    margin-bottom: 40px;
+    span {
+      display: block;
+      color: #000000;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      margin-top: 24px;
     }
   }
 }
@@ -1078,7 +1093,7 @@ text-transform: uppercase;
     font-weight: 400;
     line-height: 1;
     text-transform: uppercase;
-    margin-bottom: 160px;
+    margin-bottom: 125px;
     line-height: 1;
   }
   .order-btn {

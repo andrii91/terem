@@ -194,7 +194,8 @@
   }
   .consultation {
     padding: 45px 0;
-    .col-lg-8 {
+    text-align: center;
+    .col-lg-12 {
       padding: 0;
     }
     .title {
@@ -203,10 +204,16 @@
   }
   .consultation-list li {
     margin-bottom: 18px;
+    max-width: calc(50% - 10px);
+    text-align: left;
+    margin-right: 5px;
+    font-size: 14px;
+    line-height: 1.2;
   }
   .consultation-info {
     max-width: 219px;
     margin-bottom: 45px;
+    text-align: center;
   }
   .consultation-carousel  {
     text-align: center;
@@ -232,6 +239,7 @@
   .consultation-carousel .owl-dots {
     position: static;
     margin-top: 15px;
+    transform: none;
   }
   .reviews {
     text-align: center;
@@ -260,15 +268,20 @@
     padding-bottom: 90px;
   }
   .discount {
-      background: url(../images/sc4.png) no-repeat 0% center;
+      background: #272520;
     text-align: center;
+    margin-top: 50px;
+    min-height: inherit;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
     .discount-item h4 {
       font-size: 24px;
     }
   }
   .discount .title {
     font-size: 30px;
-    margin-bottom: 135px;
+    margin-bottom: 56px;
+    margin-top: -72px;
     text-align: center;
   }
   .discount-item p {

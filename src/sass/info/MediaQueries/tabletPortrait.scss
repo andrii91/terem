@@ -131,11 +131,24 @@
       margin: 0 auto
     }
   }
+  .consultation-list {
+    text-align: center;
+  }
   .consultation-list li {
     margin-bottom: 20px;
+    text-align: left;
+    margin-right: 20px;
+    min-width: 236px;
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+    br {
+      display: block;
+    }
   }
   .consultation-info {
     margin-bottom: 65px;
+    margin-right: 0;
   }
   .consultation .title {
     margin-bottom: 40px;
@@ -176,5 +189,17 @@
     padding: 0 15px;
     text-align: right;
   }
+.consultation-item {
+    position: absolute;
+    top: 30px;
+    left: 43px;
+    max-width: 343px;
+    text-align: center;
+}
+  .consultation-carousel .item {
+       min-height: 525px;
+    background: #efefef;
+        padding-top: 146px;
 
+  }
 }
