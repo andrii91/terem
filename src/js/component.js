@@ -8,6 +8,7 @@ $(document).ready(function () {
     loop: true,
     margin:0,
     nav: true,
+    autoplay: true,
     responsive: {
       0: {
         items: 1
@@ -168,6 +169,7 @@ reviews.owlCarousel({
     $('#preview').attr('src', $(this).parents('.slider-item').find('img').attr('src'));
     $('#home_info .m-2').text(' ').append($(this).parents('.slider-item').find('.m-2').html());
     $('#home_info .price').text(' ').append($(this).parents('.slider-item').find('.price').html());
+    $('#home_info .area').text(' ').append($(this).parents('.slider-item').data('area'));
     $('#home_info .box h4').text(' ').append($(this).parents('.slider-item').find('h4').html());
     $('#home_info .box p').text($(this).parents('.slider-item').data('info'));
     $('#home_info .home_info-item .bottom').text(' ').append($(this).parents('.slider-item').find('.caption-item p').html());

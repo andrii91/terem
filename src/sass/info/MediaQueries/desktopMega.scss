@@ -3,6 +3,9 @@
 @media #{$desktopMega} {
     @import '../desktop';
     & {
-    	
+    	  .discount {
+            background-size: contain;
+            background-position: 85% center;
+          }
     }
 }

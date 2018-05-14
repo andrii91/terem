@@ -348,4 +348,13 @@
   .home .text-right {
   text-align: center;
   }
+  .home_info-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #home_info {
+    .col-lg-4 {
+        padding: 0;
+    }
+  }
 }

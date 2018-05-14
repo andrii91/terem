@@ -1,15 +1,25 @@
 @import '../../mq';
 
 @media #{$desktopHD} {
-    @import '../desktop';
-    & {
-      .reviews-carousel {
-        width: 90vw;
-      }
-      .discount {
-    background: url(../images/sc4.png) no-repeat 0% center;
-    min-height: 716px;
-    /* background-size: cover; */
-}
+  @import '../desktop';
+  & {
+    .reviews-carousel {
+      width: 90vw;
     }
+    .discount {
+      background-position: 0 center;
+      min-height: 716px;
+      position: relative;
+      &:before {
+        content: "";
+        background: #272520;
+        height: 570px;
+        width: 100vw;
+        position: absolute;
+        top: 72px;
+        right: 50%;
+        z-index: -1;
+      }
+    }
+  }
 }
