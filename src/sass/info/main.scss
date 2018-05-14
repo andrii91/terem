@@ -267,6 +267,7 @@ letter-spacing: 1.21px;
 }
 
 .exhortation-item {
+  padding-left: 40px;
   .title {
     color: #000000;
     font-family: "Reforma Grotesk Demi C";
@@ -323,6 +324,16 @@ letter-spacing: 1.21px;
   max-width: 750px;
   min-height: 439px;
   padding: 77px 41px;
+  position: relative;
+  &:before {
+    content: "";
+    background: url('../images/line2.png') no-repeat center;
+    width: 487px;
+    height: 54px;
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+  }
   .box {
     margin-left: auto;
     max-width: 250px;
@@ -1407,4 +1418,30 @@ footer {
 }
 .lg-padd-0 {
   padding: 0;
+}
+.line-img {
+  position: relative;
+  display: inline-block;
+  &:before {
+    content: "";
+    background: url('../images/line1.png') no-repeat center;
+    width: 486px;
+    height: 59px;
+    position: absolute;
+    top: 67px;
+    left: calc(100% - 45px);
+  }
+  &:after {
+    content: "";
+    background: url('../images/lines-4.png') no-repeat center;
+    width: 67px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: calc(100% + 374px + 80px - 74px);
+  }
+}
+
+.ml-auto {
+  margin-left: auto;
 }

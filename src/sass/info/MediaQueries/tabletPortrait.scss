@@ -57,6 +57,22 @@
     max-width: 114%;
     width: 120%;
   }
+    .first img {
+    max-width: 125%;
+    width: 107%;
+    margin-bottom: 35px;
+  }
+  .line-img {
+    &:after, &:before {
+      display: none;
+    }
+  }
+  .exhortation-block:before {
+    display: none;
+  }
+  .exhortation-item {
+    padding-left: 0;
+  }
   .first {
     text-align: center;
     .first-item h2 {
