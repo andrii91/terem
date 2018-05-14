@@ -56,8 +56,9 @@ font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 0.91px;
         border: 2px solid #7a7a7a;
-        padding: 8px 17px;
+        padding: 10px 17px 8px;
         transition: 0.2s;
+        line-height: 1;
         &:hover  {
           background-color: #c83a3a;
           border-color: #c83a3a;
@@ -117,7 +118,7 @@ font-weight: 400;
 text-transform: uppercase;
 line-height: 1;
 letter-spacing: 1.21px;
-  padding: 12px 33px 10px;
+  padding: 12px 33px 9px;
   display: inline-block;
   background-color: #c83a3a;
   transition: 0.2s;
@@ -416,6 +417,7 @@ letter-spacing: 1.21px;
       font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 0.91px;
+      
       &.right {
         text-align: right;
       }
@@ -679,6 +681,9 @@ letter-spacing: 1.21px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1.21px;
+    &.area {
+        text-transform: capitalize;
+      }
   }
   .box {
     margin: 70px 0;
