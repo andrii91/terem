@@ -11,14 +11,14 @@
       min-height: 716px;
       position: relative;
       &:before {
-        content: "";
-        background: #272520;
-        height: 570px;
-        width: 100vw;
-        position: absolute;
-        top: 72px;
-        right: 50%;
-        z-index: -1;
+          content: "";
+          background: #272520;
+          height: 569px;
+          width: 100vw;
+          position: absolute;
+          top: 74px;
+          right: 50%;
+          z-index: -1;
       }
     }
   }

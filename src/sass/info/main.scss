@@ -1111,8 +1111,8 @@ text-transform: uppercase;
 .discount {
   background: url(../images/sc4.png) no-repeat 38% center;
   min-height: 716px;
-  background-size: cover;
-//  max-width: 1920px;
+//  background-size: cover;
+  max-width: 1920px;
   margin: 0 auto;
   .title {
     color: #000000;
@@ -1444,4 +1444,200 @@ footer {
 
 .ml-auto {
   margin-left: auto;
+}
+
+.build {
+  background-color: #fafafa;
+  padding: 93px 0;
+  .container {
+    max-width: 1144px;
+  }
+}
+
+.build-title {
+  color: #000000;
+  font-family: "Reforma Grotesk Demi C";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 85px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.build-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 4px solid rgba(45, 42, 46, 0.2);
+  text-align: center;
+  li {
+    display: inline-block;
+    vertical-align: top;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 12.12px;
+    cursor: pointer;
+    max-width: 368px;
+    width: 100%;
+    position: relative;
+    transition: 0.2s;
+    padding-bottom: 14px;
+    text-align: center;
+    &:before {
+      content: "";
+      width: 0;
+      height: 8px;
+      background-color: #c83a3a;
+      transition: 0.2s;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      
+    }
+    &:hover,&.active {
+      color: #c83a3a;
+       &:before {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.build-content {
+  background-color: #efefef;
+  .item {
+    display: none;
+    padding: 94px 100px 120px;
+    h3 {
+      text-align: center;
+      color: #000000;
+      font-family: "Reforma Grotesk Demi C";
+      font-size: 28px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 60px;
+    }
+    &.active {
+      display: block;
+    }
+    &#materials,&#builders {
+      padding: 64px 54px 44px;
+      text-align: center;
+    }
+  }
+}
+
+.process-item {
+  padding-left: 80px;
+  position: relative;
+  max-width: 410px;
+  margin-bottom: 50px;
+  &:before {
+    content: attr(data-number);
+    color: #c83a3a;
+    font-family: "Reforma Grotesk Demi C";
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &[data-number="01"] {
+    &:after {
+      content: "";
+      background: url('../images/1a.png') no-repeat center;
+      width: 58px;
+      height: 51px;
+      position: absolute;
+      top: 45px;
+      left: 0;
+    }
+  }
+  &[data-number="02"] {
+    &:after {
+      content: "";
+      background: url('../images/45sd.png') no-repeat center;
+width: 57px;
+height: 57px;
+      position: absolute;
+      top: 45px;
+      left: 0;
+      background-size: 100%;
+    }
+  }
+  &[data-number="03"] {
+    &:after {
+      content: "";
+      background: url('../images/dsds89.png') no-repeat center;
+width: 58px;
+height: 58px;
+      position: absolute;
+      top: 45px;
+      left: 0;
+    }
+  }
+  &[data-number="04"] {
+    &:after {
+      content: "";
+      background: url('../images/dz5fdc7z.png') no-repeat center;
+width: 56px;
+height: 57px;
+      position: absolute;
+      top: 45px;
+      left: 0;
+    }
+  }
+  
+}
+
+.materials-item {
+  max-width: 325px;
+  min-height: 542px;
+  background-color: #f7f7f7;
+  display: inline-block;
+  vertical-align: top;
+  padding: 35px 25px;
+  text-align: left;
+  &:nth-child(2) {
+    margin: 0 10px;
+  }
+  .img {
+    min-height: 227px;
+    text-align: center;
+    line-height: 13;
+    img {
+      vertical-align: bottom;
+    }
+  }
+  h5 {
+    color: #333333;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  p {
+    color: #333333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.builders-item {
+  min-height: 494px;
+  p {
+    color: #333333;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
 }

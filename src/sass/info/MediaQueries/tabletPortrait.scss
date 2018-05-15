@@ -218,4 +218,13 @@
         padding-top: 146px;
 
   }
+  .build-list li {
+    max-width: 240px;
+  }
+  .build-content .item#builders, .build-content .item#materials, .build-content .item {
+    padding: 20px;
+  }
+  .materials-item {
+    max-width: 300px;
+  }
 }

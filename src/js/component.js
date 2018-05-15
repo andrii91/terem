@@ -204,6 +204,16 @@ reviews.owlCarousel({
     to: 289,
     postfix: "м<sup>2</sup>"
     });
+  
+  $('.build-list li').click(function(){
+    $('.build-list li').removeClass('active');
+    $('.build-content .item').removeClass('active');
+    $(this).addClass('active');
+    $('#'+$(this).data('tab')).addClass('active');
+    
+  })
+  
+  
 });
 
 

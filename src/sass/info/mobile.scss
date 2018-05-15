@@ -368,4 +368,22 @@
         padding: 0;
     }
   }
+  .build-content .item, .build-content .item#builders, .build-content .item#materials {
+    padding: 20px;
+  }
+  .build-list li {
+    margin-bottom: 20px;
+  }
+  .materials-item {
+    margin-bottom: 10px;
+    img {
+      max-width: 100%;
+    }
+  }
+  .materials-item:nth-child(2) {
+    margin: 0 ;
+    margin-bottom: 10px;
+    
+  }
 }
+
