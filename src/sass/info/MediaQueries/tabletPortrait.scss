@@ -224,7 +224,8 @@
   .build-content .item#builders, .build-content .item#materials, .build-content .item {
     padding: 20px;
   }
-  .materials-item {
+  .materials-item, .materials-item:nth-child(2) {
     max-width: 300px;
+    margin-top: 20px;
   }
 }

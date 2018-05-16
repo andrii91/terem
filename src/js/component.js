@@ -192,7 +192,7 @@ reviews.owlCarousel({
     max: 10100000,
     from: 1200000,
     to: 8500000,
-    postfix: "руб"
+    postfix: " руб"
     });
   
   $("#metr_input").ionRangeSlider({
