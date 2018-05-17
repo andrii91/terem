@@ -1634,6 +1634,10 @@ height: 57px;
 
 .builders-item {
   min-height: 494px;
+  img {
+    max-width:100%;
+    max-height: 212px;
+  }
   p {
     color: #333333;
     font-family: Roboto;
