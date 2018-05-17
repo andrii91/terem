@@ -1511,7 +1511,7 @@ footer {
   background-color: #efefef;
   .item {
     display: none;
-    padding: 94px 100px 120px;
+    padding: 94px 100px 60px;
     h3 {
       text-align: center;
       color: #000000;
@@ -1633,16 +1633,16 @@ height: 57px;
 }
 
 .builders-item {
-  min-height: 494px;
+  min-height: 520px;
   img {
     max-width:100%;
     max-height: 212px;
   }
-  p {
-    color: #333333;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-  }
+ /*  p {
+   color: #333333;
+   font-family: Roboto;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 21px;
+ } */
 }
